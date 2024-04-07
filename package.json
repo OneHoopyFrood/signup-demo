@@ -1,0 +1,24 @@
+{
+  "name": "signup-demo",
+  "version": "1.0.0",
+  "description": "A quick demo of a signup form",
+  "repository": "git@github.com:OneHoopyFrood/signup-demo.git",
+  "author": "Cole Panike <3092695+OneHoopyFrood@users.noreply.github.com>",
+  "license": "None",
+  "private": true,
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.12.0",
+    "@types/react": "^18.2.74",
+    "@types/react-dom": "^18.2.24",
+    "parcel": "^2.12.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "packageManager": "yarn@4.1.1"
+}
