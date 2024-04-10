@@ -30,6 +30,7 @@ const RAW_RUNTIME_STATE =
           ["@parcel/core", "npm:2.12.0"],\
           ["parcel", "virtual:60d06cfb44cb715e6612cdb3ddf6716778e13897e7ac84ccf6162451c54528419dbd8380ec0e2b2c975ffc1f01278143cd465abc59b1994fdd0b31675dee2de1#npm:2.12.0"],\
           ["prettier", "npm:3.2.5"],\
+          ["process", "npm:0.11.10"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:60d06cfb44cb715e6612cdb3ddf6716778e13897e7ac84ccf6162451c54528419dbd8380ec0e2b2c975ffc1f01278143cd465abc59b1994fdd0b31675dee2de1#npm:18.2.0"]\
         ],\
@@ -3077,6 +3078,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["process", [\
+      ["npm:0.11.10", {\
+        "packageLocation": "../../home/node/.yarn/berry/cache/process-npm-0.11.10-aeb3b641ae-10c0.zip/node_modules/process/",\
+        "packageDependencies": [\
+          ["process", "npm:0.11.10"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["promise-retry", [\
       ["npm:2.0.1", {\
         "packageLocation": "../../home/node/.yarn/berry/cache/promise-retry-npm-2.0.1-871f0b01b7-10c0.zip/node_modules/promise-retry/",\
@@ -3242,6 +3252,7 @@ const RAW_RUNTIME_STATE =
           ["@parcel/core", "npm:2.12.0"],\
           ["parcel", "virtual:60d06cfb44cb715e6612cdb3ddf6716778e13897e7ac84ccf6162451c54528419dbd8380ec0e2b2c975ffc1f01278143cd465abc59b1994fdd0b31675dee2de1#npm:2.12.0"],\
           ["prettier", "npm:3.2.5"],\
+          ["process", "npm:0.11.10"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:60d06cfb44cb715e6612cdb3ddf6716778e13897e7ac84ccf6162451c54528419dbd8380ec0e2b2c975ffc1f01278143cd465abc59b1994fdd0b31675dee2de1#npm:18.2.0"]\
         ],\

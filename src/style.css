@@ -1,0 +1,93 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #fefefe;
+}
+
+.bg {
+  background-color: #ccccff; /* Periwinkle :3 */
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  /* Look 💄 */
+  padding: 1rem 3rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+
+  /* Position */
+  width: 20vw;
+  margin-left: 40vw;
+  margin-right: 40vw;
+  position: relative;
+  top: 25vh;
+
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > * {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+.alert {
+  padding: 0.75rem;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+.alert.success {
+  background-color: rgba(78, 131, 78, 0.8);
+}
+.alert.error {
+  background-color: rgba(255, 99, 71, 0.8);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  padding: 10px 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+form input,
+form .btns {
+  margin-top: 1rem;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+.btns .btn {
+  background-color: hsl(210, 100%, 56%);
+  font-weight: bold;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+.btns .btn:hover {
+  background-color: hsl(210, 100%, 70%);
+}
+.btns .btn:not(:first-child) {
+  margin-left: 5px;
+}
