@@ -10,7 +10,7 @@ const SignupFormErrors = {
  * A controller and state manager for the signup form
  */
 const SignupForm = () => {
-  const [signupFormValues, setSignUpFormValues] = useState({
+  const [signupFormValues, setSignupFormValues] = useState({
     username: '',
     password: '',
     confirmPassword: '',
@@ -27,14 +27,24 @@ const SignupForm = () => {
     if (savedValues) {
       // We'll only pull the username out of storage. The password and confirm
       // are there, but it feels wrong to prefill them.
-      setSignUpFormValues(JSON.parse(savedValues)['username'])
+      const { username } = JSON.parse(savedValues)
+      setSignupFormValues({ username })
       setPersisted(true)
     }
   }, []) // Do this only once
 
+  useEffect(() => {
+    // Reset alert state
+    setAccepted(false)
+    setError(SignupFormErrors.None)
+    if (firstSubmit) {
+      validateForm()
+    }
+  }, [signupFormValues, firstSubmit])
+
   const clearPersistedValues = () => {
     localStorage.removeItem('signupFormValues')
-    setSignUpFormValues({
+    setSignupFormValues({
       username: '',
       password: '',
       confirmPassword: '',
@@ -79,19 +89,16 @@ const SignupForm = () => {
 
   const persistState = () => {
     localStorage.setItem('signupFormValues', JSON.stringify(signupFormValues))
+    setPersisted(true)
   }
 
-  // Event handler for input changes
   const handleChange = (e) => {
     const { name, value } = e.target
 
-    setSignUpFormValues((prevState) => ({
+    setSignupFormValues((prevState) => ({
       ...prevState,
       [name]: value,
     }))
-    if (firstSubmit) {
-      validateForm()
-    }
   }
 
   return (
