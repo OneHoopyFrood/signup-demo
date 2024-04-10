@@ -2,6 +2,15 @@
 
 Quick demo of a sign up form page.
 
+## Running the Application
+
+1. Clone the repo
+2. run `corepack enable`
+3. run `yarn start`
+
+It should take off and run for you. If not, consider starting the .devcontainer
+as this will allow you to be isolated from your host environment and it's concerns.
+
 ## The Brief
 
 Create a simple sign up form using ReactJS. No backend is required.
