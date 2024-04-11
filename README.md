@@ -6,7 +6,7 @@ Quick demo of a sign up form page.
 
 1. Clone the repo
 2. run `corepack enable`
-3. run `yarn start`
+4. run `yarn & yarn start`
 
 It should take off and run for you. If not, consider starting the .devcontainer
 as this will allow you to be isolated from your host environment and it's concerns.
